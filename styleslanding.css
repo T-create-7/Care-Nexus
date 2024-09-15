@@ -29,6 +29,14 @@ p {
 #Abilities {
     background-color: rgba(185,185,184,0.7);
 }
-ul {
+ul#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#nav > li {
+display: inline;    
+}
+ul > footer {
     text-align: left;
 }
