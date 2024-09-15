@@ -30,6 +30,7 @@ p {
     background-color: rgba(185,185,184,0.7);
 }
 ul#nav {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
