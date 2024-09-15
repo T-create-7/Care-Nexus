@@ -29,13 +29,13 @@ p {
 #Abilities {
     background-color: rgba(185,185,184,0.7);
 }
-#nav {
+nav {
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
 }
-#nav li {   
+nav li {   
     list-style: none; 
     display: inline-block;
     padding: 0 20px;   
