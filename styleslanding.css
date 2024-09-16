@@ -55,6 +55,9 @@ ul > footer {
     .bar {
         justify-content: space-between;
     }
+/*My intent was to have the About Me and Work experience sections be flexboxes that display as columns, 
+side-by-side on smaller screens, but I couldn't get that to work. I'll ask for some help and clarity.
+A recent update broke some of my formating, and now the colored sections have no space between them and the ends of the window. I'll troubleshoot that.*/    
 }
 .col {
     display: flex;
