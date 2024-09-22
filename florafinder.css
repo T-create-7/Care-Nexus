@@ -1,0 +1,8 @@
+#pagename {
+    text-align:center;
+}
+.plantfind {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
