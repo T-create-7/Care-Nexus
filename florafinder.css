@@ -1,8 +1,12 @@
 #pagename {
     text-align:center;
+    font-family: "Pixelify Sans";
 }
 input {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+}
+#ambience {
+    background-image: url("GitPics/IMG_5309.JPG");
 }
