@@ -1,7 +1,7 @@
 #pagename {
     text-align:center;
 }
-.plantfind {
+input {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
