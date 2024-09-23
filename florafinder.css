@@ -4,13 +4,15 @@
     font-weight: bold;
 }
 .flex-container {
-    display: flex;
+    display:flex;
+    justify-content:space-around;
 }
 input {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
+/*How can I get this image to appear?*/
 #ambience {
     background-image: url("GitPics/farmscape.JPG");
 }
