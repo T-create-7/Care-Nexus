@@ -3,6 +3,9 @@
     font-family: "Pixelify Sans";
     font-weight: bold;
 }
+.flex-container {
+    display: flex;
+}
 input {
     display: flex;
     flex-direction: row;
