@@ -25,7 +25,7 @@
      score = prompt ("Please enter a valid score. We don't give negative grades.") 
  }
 
- if (score>=90 ) {
+ else if (score>=90 ) {
      console.log('You scored an A! How good')
  }
  else if (score<90 && score >=80) {
