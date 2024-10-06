@@ -8,6 +8,12 @@ section h1, h2 {
     font-family: "Pixelify Sans";
     font-weight: bold;
 }
+#leadinginfo h1 {
+    text-align: center;
+}
+#TOC h1 {
+    text-align:center;
+}
 
 
 /*Leftover css from other file. Test it!
