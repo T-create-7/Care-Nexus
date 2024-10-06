@@ -1,5 +1,22 @@
 header h1 {
     text-align: center;
     font-family: "Pixelify Sans";
+    font-weight: bolder;
+}
+section h1, h2 {
+    text-align: left;
+    font-family: "Pixelify Sans";
     font-weight: bold;
 }
+
+
+/*Leftover css from other file. Test it!
+h2{
+    font-weight:bold;
+}
+aside{
+    text-align:right;
+}
+footer{
+    text-align:left;
+}*/
