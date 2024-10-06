@@ -8,10 +8,10 @@ section h1, h2 {
     font-family: "Pixelify Sans";
     font-weight: bold;
 }
-#leadinginfo h1 {
+h1#leadinginfo {
     text-align: center;
 }
-#TOC {
+h1#TOC {
     text-align: center;
 }
 
