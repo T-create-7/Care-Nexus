@@ -11,8 +11,8 @@ section h1, h2 {
 #leadinginfo h1 {
     text-align: center;
 }
-#TOC h1 {
-    text-align:center;
+#TOC {
+    text-align: center;
 }
 
 
