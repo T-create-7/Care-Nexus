@@ -40,8 +40,14 @@
                   </nav>
             <section class="flex-container"><label for="plantpic">Please show your plant(s) in question</label>
             <input type="file" id="plantpic" name="plantpic"
-            accept="image/png, image/jpeg, image/gif" required multiple>
-            <button type="ref image">Submit</button></section>
+            accept="image/*;capture=camera" required multiple />
+            <!--Idea: Use a photo of a magnifying glass over a leaf as a panel. 
+            <button type="ref image">Submit</button>
+             You can also call accepted images by file type: 
+             image/png, image/jpeg, image/gif" -->
+             <button type="submit" value="submit" onclick="floraFindr">Submit</button>
+          </section>
+
             <section id="ambience"></section>
             <section></section>
         <footer></footer>
