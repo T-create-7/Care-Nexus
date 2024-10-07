@@ -1,7 +1,23 @@
+:root {
+    --red: rgb(191 43 17);
+    --yellow: rgba(255,255,94,0.8);
+    --gray: rgba(185,185,184,0.7);
+    }
+
 header h1 {
     text-align: center;
     font-family: "Pixelify Sans";
     font-weight: bolder;
+    border-radius: 45px 45px 0 0;
+}
+#pagename, #leadinginfo {
+    background-color: var(--red);
+}
+#leadinginfo {
+    padding-left: 15px;
+}
+#TOC, .cntnts {
+    background-color: var(--yellow);
 }
 section h1, h2 {
     text-align: left;
@@ -14,8 +30,62 @@ h1#leadinginfo {
 h1#TOC {
     text-align: center;
 }
+dd {
+    font-style: italic;
+}
+#execSum, #prjparts {
+	background-color: var(--gray);
+    padding-left: 15px;
+}
+#adverse, #aha, #vizDat {
+    background-color: var(--yellow);
+    padding-left: 15px;
+}
+#closing {
+    background-color: var(--gray);
+    padding-left: 15px;
+}
+#endit {
+    background-color: var(--red);
+    border-radius: 0 0 45px 0;
+    padding-left: 15px;
+    padding-top: 1px;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    /*background-color: #eee;*/
+    background-color: var(--gray);
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: 8px var(--red);
+    outline-style: dotted;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #969696;
+  }
 
-
+.accordYL {
+        /*background-color: #eee;*/
+        background-color: var(--yellow);
+        margin: 10px 0 10px 0;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        border: 8px var(--red);
+        outline-style: dotted;
+        transition: 0.4s;
+    }
+      
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .active, .accordYL:hover {
+        background-color: hsl(61, 38%, 49%);
+      }
+  
 /*Leftover css from other file. Test it!
 h2{
     font-weight:bold;
