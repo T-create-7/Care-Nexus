@@ -45,7 +45,8 @@ dd {
     background-color: var(--gray);
     padding-left: 15px;
 }
-#endit {
+#endit:not(footer) {
+/*Adjusted to only have a border above contacts*/  
     background-color: var(--red);
     border-radius: 0 0 45px 0;
     padding-left: 15px;
@@ -70,7 +71,6 @@ dd {
   }
 
 .accordYL {
-        /*background-color: #eee;*/
         background-color: var(--yellow);
         margin: 10px 0 10px 0;
         cursor: pointer;
