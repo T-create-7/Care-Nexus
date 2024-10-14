@@ -1,18 +1,99 @@
+:root {
+    --red: rgb(191 43 17);
+    --yellow: rgba(255,255,94,0.8);
+    --gray: rgba(185,185,184,0.7);
+    }
+
+header>:not(nav) {
+    background-color: var(--red);
+    border-radius: 45px 45px 0 0;
+    margin-bottom: 0;
+}    
+
+p {
+    background-color: var(--red);
+    text-align: center;
+    font-family: "Futura";
+    font-size: 1.2rem;
+}
+
+/* .container {
+    background-color: var(--red);
+    font-family: "Pixelify Sans";
+    font-size: 1.5rem;
+}
+.container>h1 {
+    font-weight: bold;
+} */
+
+.accordion-body:first-of-type {
+    background-color: var(--yellow);
+}
+
+/* How can I style only the second accordion interior to be yellow?
+.accordion-body:last-of-type {
+    background-color: var(--gray);
+} */
+
+h5 {
+    font-family: "Pixelify Sans";
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* body>nav {
+    background-color: var(--red);
+} */
+
 #pagename {
     text-align:center;
     font-family: "Pixelify Sans";
     font-weight: bold;
 }
+
 .flex-container {
     display:flex;
-    justify-content:space-around;
-}
+    justify-content:space-around;}
+
 input {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 }
+
+footer {
+    background: var(--gray);
+    border-radius: 0 0 45px 45px;
+    margin-top: 0;
+}
+footer>h3 {
+    padding-left: 10px;
+}
+footer>ul {
+    text-align: left;
+    padding-left: 50px;
+}
+
 /*How can I get this image to appear?*/
-#ambience {
+html {
+    background-image: url("GitPics/farmscape.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*Color variable example-- background-color: var(--red) */
+
+/*#ambience {
     background-image: url("GitPics/farmscape.JPG");
 }
+.flex-container {
+    display:flex;
+    justify-content:space-around;
+}    
+*/
+
+/* My colors
+--red: rgb(191 43 17);
+--yellow: rgba(255,255,94,0.8);
+--gray: rgba(185,185,184,0.7); */
