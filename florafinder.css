@@ -3,12 +3,32 @@
     --yellow: rgba(255,255,94,0.8);
     --gray: rgba(185,185,184,0.7);
     }
+/*As of this version, I've moved the background image to this position from the bottom of the CSS. But I still 
+need to figure out how to make some of the elements transparent*/
+
+html {
+    background-image: url("GitPics/farmscape.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 header>:not(nav) {
     background-color: var(--red);
     border-radius: 45px 45px 0 0;
     margin-bottom: 0;
-}    
+}
+
+.showline {
+    background-color: rgb(185, 185, 184);
+}
+
+.magsnap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+}
 
 p {
     background-color: var(--red);
@@ -52,8 +72,9 @@ h5 {
 }
 
 .flex-container {
-    display:flex;
-    justify-content:space-around;}
+    display: flex;
+    justify-content:space-around;
+}
 
 input {
     display: flex;
@@ -72,14 +93,6 @@ footer>h3 {
 footer>ul {
     text-align: left;
     padding-left: 50px;
-}
-
-/*How can I get this image to appear?*/
-html {
-    background-image: url("GitPics/farmscape.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 /*Color variable example-- background-color: var(--red) */
