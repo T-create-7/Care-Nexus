@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
 } 
 h1 {
-    font-family: "Pixelify Sans";
+    font-family: "Pixelify Sans", system-ui;
     font-weight: bold;
     text-align: center;
 }
@@ -26,7 +26,7 @@ h3 {
     font-size: 1.15rem;
 }
 section {
-    font-family: "Futura";
+    font-family: "Futura", system-ui;
 }
 p {
     text-align-last: center;
