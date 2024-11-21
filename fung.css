@@ -4,6 +4,14 @@
     --gray: rgba(185,185,184,0.7);
     }
 
+    /* html {
+      background-image: url("GitPics/fngshelves.JPG");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  } */
+  
+
 header h1 {
     text-align: center;
     font-family: "Pixelify Sans", system-ui;
