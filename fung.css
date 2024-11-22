@@ -29,6 +29,10 @@ p.pagedescript {
     font-style: italic;
 }
 
+figcaption {
+  font-style: italic;
+}
+
 p.sbjctmatter {
   /* This indents all of my Ps with subject content, only */
   text-indent: 1em; 
@@ -37,6 +41,11 @@ p.sbjctmatter {
 }
 
 p {
+  font-family: "Futura", system-ui;
+}
+
+  /* Attempt to give the uls within sbjctmatter the proper font */
+p.sbjctmatter>ul>li {
   font-family: "Futura", system-ui;
 }
 
