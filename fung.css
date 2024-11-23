@@ -38,13 +38,19 @@ p.sbjctmatter {
   text-indent: 1em; 
   margin: 0;
   font-family: "Futura", system-ui;
+  font-size: 1.15rem;
 }
 
 p {
   font-family: "Futura", system-ui;
+  font-size: 1.15rem
 }
 
-  /* Attempt to give the uls within sbjctmatter the proper font */
+p.sbjctmatter > dl{
+  font-family: "Futura", system-ui;
+}
+
+  /* I need styling to give the uls within sbjctmatter the proper font */
 p.sbjctmatter>ul>li {
   font-family: "Futura", system-ui;
 }
