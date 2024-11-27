@@ -70,85 +70,226 @@
                 <li>API Development</li>
               </ul>   
 
-            <header><h1 id="pagename">Project: How This Site's API Was Built</h1>
-            <p class="pagedescript">The process of connecting a plant identifier to this website.</p>
+            <header><h1 id="pagename">Project: Incorporating Kindwise's Plant API   
+            </h1>
+            <p class="pagedescript">The process of connecting a plant identifier to this website.
+            </p>
           </header>
        <section id="leadinginfo"><h1></h1>
         <h2>By Tykwon Gavins</h2>
-        <h2>Project Duration:</h2>
-        <p>October 11, 2024 - ?</p>
+        <h2>Project Duration: October 8, 2024 - October 20, 2024</h2>
+        <h2>Budget: Free (but it will need to periodically be renewed and adjusted)</h2>
        </section>
 <h1 id="TOC">Table of Contents</h1>
 <!--Try making this a collapsible list, with each section having a background image!-->
   <ol class="cntnts">
     <dl>
-      <li><dt><a href="#execSum">Executive Summary</a></dt></li>
+      <li>
+        <dt><a href="#execSum">Executive Summary</a></dt>
+      </li>
         <dd></dd>
-      <li><dt><a href="#prjparts">Project Overview</a></dt></li>
+      <li>
+        <dt><a href="#prjparts">Project Overview</a></dt>
+      </li>
         <dd></dd>
-      <li><dt><a href="#prjnalys">Project Analysis</a></dt></li>
+      <li>
+        <dt><a href="#prjnalys">Project Analysis</a></dt>
+      </li>
         <dd>Preliminary research and evalution</dd>
-      <li><dt><a href="#projmlstn">Project Milestones</a></dt></li>
-        <dd>Breakthroughs that steered me to completion</dd>
-      <li><dt><a href="#adverse">Challenges</a></dt></li>
+      <li>
+        <dt><a href="#projmlstn">Project Milestones</a></dt>
+      </li>
+        <dd>Breakthroughs or realizations that steered me to completion</dd>
+      <li>
+        <dt><a href="#adverse">Challenges</a></dt>
+      </li>
         <dd>Project impediments, foreseen or not</dd>
-      <li><dt><a href="#aha">Solutions</a></dt></li>
+      <li>
+        <dt><a href="#aha">Solutions</a></dt>
+      </li>
         <dd>How I adapted this project accordingly</dd>
-      <li><dt><a href="#vizDat">Visual Data</a></dt></li>
+      <li>
+        <dt><a href="#vizDat">Visual Data</a></dt>
+      </li>
         <dd>Photos, surveys, and figures</dd>
-      <li><dt><a href="#closing">Results</a></dt></li>
+      <li>
+        <dt><a href="#closing">Results</a></dt>
+      </li>
         <dd></dd>
-      <li><dt><a href="#fnle">Conclusion</a></dt></li>
+      <li>
+        <dt><a href="#fnle">Conclusion</a></dt>
+      </li>
+      <li>
+        <dt><a href="#furthermore">Next...</a></dt>
+      </li>
         <dd></dd>
-      <!-- Commented out since there is no API for this project...yet!
+      <!-- Commented out since this is the API project!!
         <li><dt><a href="#apid">API Integration</a></dt></li>
         <dd></dd> -->
       </dl>
     </ol>
   <section id="execSum">
-    <button class="accordion"><h1>1. Executive Summary</h1></button>
-    <div class="panel"></div>
+    <button class="accordion">
+      <!-- Executive Summary Section -->
+      <h1>1. Executive Summary</h1>
+    </button>
+    <div class="panel">
+      <p class="sbjctmatter">This was the integration of plant-identifying software into our website, using kindwise.com’s database, definitions, and diagnoses. 
+        It is, in several ways, the culmination of our coding instruction in Change Food for Good’s introductory course. 
+        <br>
+        <br>
+        This program is a handy preliminary or supplementary means of identifying unfamiliar plants or health issues, which can be great for inexperienced 
+        growers like myself. Though useful and fun, it should not be relied upon 
+        <span class="underln">exclusively</span>.
+      </p>
+    </div>
   </section>
+
+      <!-- This section comprises sections 2-4 -->
   <section id="prjparts">
-    <button class="accordion"><h1>2. Project Overview</h1></button>
-      <div class="panel">Budget: </div>
-    <button class="accordion"><h2 id="prjnalys">3. Project Analysis</h2></button>
-      <div class="panel"><p></p>
-        <aside>Voices of a gardening neighbor family; link to recording clips</aside>
-        <figure><figcaption><h4>Developmental Progress
-          <!--include some images of the sites I've scouted, and their locations on a map.-->
-        </h4></figcaption>
-        </figure>
-        </div>
-        <button class="accordion"><h2 id="projmlstn">4. Project Milestones</h2></button>
-          <div class="panel"></div>
+    <!-- Project Overview Section -->
+    <button class="accordion">
+      <h1>2. Project Overview</h1>
+    </button>
+      <div class="panel">
+        <p class="sbjctmatter">An Application Programming Interface (API) allows disparate pieces of software (like two different websites) to collaborate to conduct functions and relay information. In this case, we students each coded an API to access Kindwise’s generous plant identifying service through our own websites.
+        <br>
+        <br>
+          We enlisted this API for its availability, free trials, and relative ease (though not simplicity) of implementation. As previously stated, access to an application like this is a helpful tool for growers, and useful for anyone seeking to learn more about their local flora. There also exists the potential to help improve Kindwise’s database with any corrections or further information one may have. 
+          At the start of our course, I used an alumni's API to check the health of apple trees in my neighborhood. It has already served not only to sate my own curiosity, but (to my surprise,) may also help some of my local librarians better tend their plants!
+        <br>
+        <br>  
+         The main vice of this API is its relatively small count of free-use tokens, and how readily they can be expended. A user spends one __each time__ they click the Submit button, whether they’ve received/awaited a result or not. But this fault presents fun opportunity to find ways to limit user click inputs through Javascript, which I’d love to eventually explore.
+        <br>
+        <br>
+          Kindwise’s service also offers insect and fungus identifiers, which I’m thrilled to later incorporate thanks to my own curiosity.
+        </p>
+      </div>
+
+    <!-- Project Analysis Section; include a few screenshots! -->   
+    <button class="accordion"> 
+      <h2 id="prjnalys">3. Project Analysis</h2>
+    </button>
+      <div class="panel">
+        <p class="sbjctmatter">To employ this API, we of course first needed a page to connect it to! Throughout our months in this course, we crafted portfolio sites (like the one you see here.) The API 
+          resides on our Plant ID pages.
+         <!-- Insert a working link to the plant ID page above. Test the address! <a href=“plantidentifier.html”>Plant ID</a> -->
+          <br>
+          <br>
+             The next step was to create a free Kindwise account, note our ID keys, and include all of the relevant information to make the API call functional. To list a few, that includes the js script 
+             source and all of the many properties, values, and variables that the sites need to properly intercommunicate.
+          <br>
+          <br>
+             With over 200 lines of code, it was quite an undertaking, even with our instructors’ help. But it was equally important to create lines of comments to know the importance of each segment, and 
+             troubleshoot it all until it worked. Any time this API runs through its supply of tokens, I’ll have to make a new key and change the code accordingly, but that should be far simpler than building the API was to begin with.
+        </p>
+      </div>
+        
+    <button class="accordion">
+      <h2 id="projmlstn">4. Project Milestones</h2>
+    </button>
+          <div class="panel">
+            <p class="sbjctmatter">In effect, any rudimentary knowledge we gained throughout this course and needed for this task was a milestone. 
+              That’s all of the html (and css) we used to build these sites in the first place, knowledge of javascript variables, functions, and property-value pairs, 
+              and comprehension of what an API is. But the largest steps towards this integration were likely...
+
+              <ul>
+              <li>Coding the plant identifier page, with its submission fields.
+                </li>
+              <li>Creating a kindwise account, since the API needs a unique user key and various background information to work.
+                </li>
+              <li>Finishing the API call javascript, which relays a submitted image and returns a response.
+                </li>
+              <li>Testing and refining it until successful.
+                </li>
+              </ul>
+            </p>
+          </div>
         </section>
+
 <section id="adverse">
-  <button class="accordYL"><h1>5. Challenges</h1></button>
+  <button class="accordYL">
+    <h1>5. Challenges</h1>
+  </button>
   <div class="panel">
-    <p></p>
+    <p class="sbjctmatter">The primary challenge of this project was troubleshooting my code. With 
+      so many lines of content, there are many potential errors. While course alumnis guided us and provided 
+      framework, all of that had to be adapted to the way we chose to name, classify, and arrange elements 
+      on our site. It ultimately took the help of two instructors and a close friend who worked as a back-end web developer 
+      to fully resolve, and by the time I did, I had already expended nearly half of my free use tokens. 
+      <br>
+      As is sometimes the case in coding, the issue was comically minute, too.
+      <br>
+      <br>
+      While it isn't <span id="ital">yet</span> an issue, I will eventually have to create a new key and adjust the 
+      code of the plant identifier page accordingly. Those free tokens will vanish especially fast once I adjoin other 
+      APIs (insect and mushroom,) since they all share the same account.
+      <br>
+      <br>
+      I've also realized that my code doesn't remove the results from previous submissions when one makes consecutive API 
+      calls with different results, and want to resolve that. Perhaps there exists a function to not only hide a previous API 
+      result, but also store it until a visitor leaves the page or even offer it as a document.
+    </p>
   </div>
-  <button class="accordYL"><h1 id="aha">6. Solutions</h1></button>
+  <button class="accordYL">
+    <h1 id="aha">6. Solutions</h1>
+  </button>
   <div class="panel">
-    <p></p>
+    <p class="sbjctmatter">
+      Despite the breadth and density of code, the biggest issue was minor--I used back ticks (`) instead of single or double quotes for a 
+      few items in my html field, which invalidated them! There are still refinements to make, but it is thankfully functional.
+    </p>
   </div>
 </section>
+
+<!-- Visual Data for this project may entail either screenshots of some code, OR pictures of some plants I've used it to identify! -->
 <section id="vizDat">
-  <button class="accordYL"><h1>7. Visual Data</h1></button>
+  <button class="accordYL">
+    <h1>7. Visual Data</h1>
+  </button>
   <div class="panel">
-    <p></p>
+    [Coming Soon]
+    <p class="sbjctmatter">
+      <figure>
+        <figcaption>
+          <!-- Place pictures here! -->
+        </figcaption>
+      </figure>
+    </p>
   </div>
 </section>
 <section id="closing">
-    <button class="accordion"><h1>8. Results</h1></button> 
+    <button class="accordion">
+      <h1>8. Results</h1>
+    </button> 
       <div class="panel">
-        <p></p></div>
-    <button class="accordion"><h2 id="fnle">9. Conclusion</h2></button>
+        <p class="sbjctmatter">
+          Though I have some improvements to make to the page and its code, I'm very happy with Kindwise's API. It gives me new ways to enjoy 
+          my many outdoor photos of plants, and even the chance to potentially learn about ones my friends in other countries see. Through it, I've 
+          learned that an apple tree in my neighborhood may be suffering a fungal infection. 
+          <br>
+          <br>
+          On November 11, 2024, I even used it to check on some plants at one of my local libraries. The species identification seems accurate, and I'm even more 
+          excited to add additional APIs and pages over the coming months. 
+        </p>
+      </div>
+    <button class="accordion">
+      <h2 id="fnle">9. Conclusion</h2>
+    </button>
       <div class="panel">
-        <p></p></div>
-    <button class="accordion"><h2 id="apid">10. Info for API Integration Project</h2></button>
+        <p class="sbjctmatter">
+          Getting this API to function fully was careful work, but fun and thoroughly worthwhile. I welcome the need to periodically refresh my 
+          account, since it gives further incentive to periodically check on my changes. Kindwise's database and experience seems impressive! 
+        </p>
+      </div>
+    <button class="accordion">
+      <h2 id="apid">10. Next...</h2>
+    </button>
       <div class="panel">
-        <p></p></div>
+        <p class="sbjctmatter">
+          Look for insect and fungus APIs to join this website in the near future!
+        </p>
+      </div>
           </section>
             <section id="endit">
             <!--Complete the JS source once I have it-->

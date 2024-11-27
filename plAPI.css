@@ -18,6 +18,33 @@ header h1 {
 p.pagedescript {
     text-align: center;
     font-size: 1.5rem;
+    font-style: italic
+}
+
+figcaption {
+  font-style: italic;
+}
+
+p.sbjctmatter {
+  /* This indents all of my Ps with subject content, only */
+  text-indent: 1em; 
+  margin: 0;
+  font-family: "Futura", system-ui;
+  font-size: 1.15rem;
+}
+
+p {
+  font-family: "Futura", system-ui;
+  font-size: 1.15rem
+}
+
+p.sbjctmatter > dl{
+  font-family: "Futura", system-ui;
+}
+
+  /* I need styling to give the uls within sbjctmatter the proper font */
+p.sbjctmatter>ul>li {
+  font-family: "Futura", system-ui;
 }
 
 #leadinginfo {
