@@ -47,6 +47,15 @@ p.sbjctmatter>ul>li {
   font-family: "Futura", system-ui;
 }
 
+#ital {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.underln {
+  text-decoration: underline;
+}
+
 #leadinginfo {
     padding-left: 15px;
 }
