@@ -8,6 +8,8 @@ img {
     margin-right: auto;
     max-height: 400px;
 }
+
+/* These widows and orphans were just added for an early assignment, when we had to use properties that we didn't cover in class. */
 body {
     widows: 2;
     orphans: 3;
@@ -66,20 +68,28 @@ ul > footer {
     .bar {
         justify-content: space-between;
     }
+
 /*My intent was to have the About Me and Work experience sections be flexboxes that display as columns, 
 side-by-side on smaller screens, but I couldn't get that to work. I'll ask for some help and clarity.
 A recent update broke some of my formating, and now the colored sections have no space between them and the ends of the window. I'll troubleshoot that.*/    
 }
+
 .col {
     display: flex;
 }
-@media screen and (max-width: 600px) {
+
+/* Commented out because it doesn't create the desired effect. Is meant to 
+make the columns share a row at the given breakpoint. That wouldn't look 
+good, regardless. */
+
+/* @media screen and (max-width: 600px) {
     .col1,
     .col2 {
         flex-direction: column;
         width: 50%;
     }
-}
+} */
+
 @media (min-width: 600px) {
     p {
         font-size: 1.15rem;
@@ -90,29 +100,59 @@ A recent update broke some of my formating, and now the colored sections have no
     p {
         font-size: 1.2rem;
         line-height: 1.3;
-        }
+        }  
     }
+
+/* Fixed! 
+The container with these links overlapped the next section because the height 
+of the container was LESS than its contents. Heed this in the future. Choose 
+values carefully, or give containers dimensions to "fit-content"     */
     :has(> .box) {
         margin: 15px auto;
         width: fit-content;
-        height:100px;
-        display:grid;
+        height: fit-content;
+        display: grid;
         grid-template-columns: 200px 200px 200px 200px;
         grid-row: auto auto;
         grid-column-gap: 20px;
         grid-row-gap: 10px;
+        max-width: 900px;
+        justify-content: space-around;
+
         .box{
           background-color:rgba(185,185,184,0.7);
           padding:20px;
           border-radius:10px;
           color:#fff;
-          display:flex;
+          display: flex;
           flex-wrap: wrap;
-          align-items:center;
-          justify-content:center;
+          align-items: center;
+          justify-content: center;
           text-align: center;
-          font-size:1.2rem;
+          font-size: 1.2rem;
           font-family:"Futura", system-ui;
         }
-      
       }
+
+/* Attempting to style these icons to display 2x2 in smaller windows 
+    or on small screens */
+    @media (max-width: 900px) {
+        div.container.artsections {
+            display: flex;
+            grid-template-columns: 230px 230px;
+            grid-row: auto auto;
+            gap: 15px;
+            flex-wrap: wrap;
+            height: fit-content;
+        }
+        }
+
+/* This was placed to try to troubleshoot my problem with the overlapping 
+elements. I don't need it now, but it could be smart to keep the 
+media query around for later.        
+    @media (max-width: 775px) {
+        section#Boutme {
+            margin-top: 25px;
+        }
+
+    } */
