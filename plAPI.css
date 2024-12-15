@@ -25,6 +25,16 @@ figcaption {
   font-style: italic;
 }
 
+.apple>img {
+  width: 20%;
+  height: 20%;
+  border-radius: 45px 0 0 45px;
+}
+
+figcaption.preview {
+  max-width: 350px;
+}
+
 p.sbjctmatter {
   /* This indents all of my Ps with subject content, only */
   text-indent: 1em; 
