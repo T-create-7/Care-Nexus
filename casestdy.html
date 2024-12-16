@@ -58,94 +58,136 @@
           Their styling is near the bottom of the CSS, in a comment labeled BREAD  -->
           <ul class="breadcrumb">
             <li>Other Case Studies:</li>
-            <li>Pink Prospects</a></li>
+            <li>Pink Prospects</li>
             <li><a href="mushroomcase.html">Lion's Mane Kit</a></li> 
             <li><a href="apicase.html">API Development</a></li>
           </ul>
           </header>
-       <section id="leadinginfo"><h1>Project: Pink Prospects</h1>
-        <h2>By Tykwon Gavins</h2>
-        <h2>Project Duration:</h2>
-        <p>August 27, 2024 - October 31, 2024</p>
-        <h2>Project Budget:</h2>
-        <p>$500</p>
+       <section id="leadinginfo">
+        <h1>Project: Pink Prospects</h1>
+          <h2>By Tykwon Gavins</h2>
+          <h2>Project Duration:</h2>
+            <p>August 27, 2024 - October 31, 2024 (longer if realized!)</p>
+          <h2>Project Budget:</h2>
+            <p>$500</p>
        </section>
-<h1 id="TOC">Table of Contents</h1>
 
+       <h1 id="TOC">Table of Contents</h1>
 <!--Try making this a collapsible list, with each section having a background image!-->
   <ol class="cntnts">
     <dl>
-      <li><dt><a href="#execSum">Executive Summary</a></dt></li>
+      <li>
+        <dt><a href="#execSum">Executive Summary</a></dt>
+      </li>
         <dd></dd>
-      <li><dt><a href="#prjparts">Project Overview</a></dt></li>
+      <li>
+        <dt><a href="#prjparts">Project Overview</a></dt>
+      </li>
         <dd></dd>
-      <li><dt><a href="#prjnalys">Project Analysis</a></dt></li>
+      <li><dt><a href="#prjnalys">Project Analysis</a></dt>
+      </li>
         <dd>Preliminary research and evalution</dd>
-      <li><dt><a href="#projmlstn">Project Milestones</a></dt></li>
+      <li>
+        <dt><a href="#projmlstn">Project Milestones</a></dt>
+      </li>
         <dd>Breakthroughs that steered me to completion</dd>
-      <li><dt><a href="#adverse">Challenges</a></dt></li>
+      <li>
+        <dt><a href="#adverse">Challenges</a></dt>
+      </li>
         <dd>Project impediments, foreseen or not</dd>
-      <li><dt><a href="#aha">Solutions</a></dt></li>
+      <li>
+        <dt><a href="#aha">Solutions</a></dt>
+      </li>
         <dd>How I adapted this project accordingly</dd>
-      <li><dt><a href="#vizDat">Visual Data</a></dt></li>
+      <li>
+        <dt><a href="#vizDat">Visual Data</a></dt>
+      </li>
         <dd>Photos, surveys, and figures</dd>
-      <li><dt><a href="#closing">Results</a></dt></li>
+      <li>
+        <dt><a href="#closing">Results</a></dt>
+      </li>
         <dd></dd>
-      <li><dt><a href="#fnle">Conclusion</a></dt></li>
+      <li>
+        <dt><a href="#fnle">Conclusion</a></dt>
+      </li>
         <dd></dd>
-      <li><dt><a href="#apid">API Integration</a></dt></li>
+      <li>
+        <dt><a href="#apid">API Integration</a></dt>
+      </li>
         <dd></dd>
       </dl>
     </ol>
+
   <section id="execSum">
     <button class="accordion"><h1>1. Executive Summary</h1></button>
     <div class="panel">
-      <p class="sbjctmatter">This report expounds upon my ideation of Pink Prospects, a small-scale hydroponic drip system that I may develop within 
-        a community space, Pink Houses Community Farm. Pink Prospects is intended to improve public awareness of hydroponics while also offering useful 
-        culturally-desired crops that mightn’t be readily available.
+      <p class="sbjctmatter">This report expounds upon my ideation of Pink Prospects, a small-scale hydroponic drip system 
+        that I may develop within a community space, Pink Houses Community Farm. Pink Prospects is intended to improve 
+        public awareness of hydroponics while also offering useful culturally-desired crops that mightn’t be readily available.
         <br>
         <br>
     </p>
-    <p class="sbjctmatter">Though Pink Prospects will be the focus of this document, it will also briefly present some of my other small-scale food system 
-      solutions that could incentivize composting, improve awareness of local food resources, and widen the variety of crops in the neighborhood.
+    <p class="sbjctmatter">Though Pink Prospects will be the focus of this document, it will also briefly present some of my 
+      other small-scale food system solutions that could incentivize composting, improve awareness of local food resources, 
+      and widen the variety of crops in the neighborhood.
         <br>
         <br>
-      My neighborhood--East New York, Brooklyn has been reported as one of the poorest in the area, and is also a food desert with a high density of fast 
-      food chains. Yet paradoxically, there are several well-kept growing spaces within ten blocks of me, and a good number of weekly food distributions.
+      My neighborhood--East New York, Brooklyn has been reported as one of the poorest in the area, and is also a food desert 
+      with a high density of fast food chains. Yet paradoxically, there are several well-kept growing spaces within ten blocks 
+      of me, and a good number of weekly food distributions.
     </p>
-
     </div>
     <!-- [optional; include a demarcated image of my region, using figure and figcaption] -->
+    <figure id="bklynmap">
+      <img src="GitPics/regionsofbrooklyn.png" 
+           title="this corner of Brooklyn">
+      </figure>
   </section>
+  
   <section id="prjparts">
     <button class="accordion"><h1>2. Project Overview</h1></button>
       <div class="panel">
+        <h5><span class="underln">Origin</span></h5>
         <p class="sbjctmatter">
-          <h5><span class="underln">Origin</span></h5>
-          My project took form as the teachings of Change Food for Good’s Intro to AgTech course and my own observations admixed. I’ve regularly volunteered at 
-          several food pantries weekly over recent years, and love visiting Grow NYC’s Cypress Hills farmstand as well. Access to food resources has improved 
-          here, but still seems disjointed. There are many great public farms and families with prolific, passionately-kept gardens. Yet many people who need 
-          these services seem unaware of their existence.
+          <!-- If the h is here, the paragraph doesn't receive font styling. Make sure I understand why!
+          <h5><span class="underln">Origin</span></h5> -->
+          My project took form as the teachings of Change Food for Good’s Intro to AgTech course and my own observations admixed. 
+          I’ve regularly volunteered at several food pantries weekly over recent years, and love visiting Grow NYC’s Cypress Hills 
+          farmstand as well. Access to food resources has improved here, but still seems disjointed. There are many great public 
+          farms and families with prolific, passionately-kept gardens. Yet many people who need these services seem unaware of 
+          their existence.
           <br>
           <br>
-        </p>
-        <p class="sbjctmatter">Additionally, some local composting services in our neighborhood have been defunded and terminated because of low or improper use. 
-          I shared compost with the Cypress Hills GROWNYC Farmstand for most of the past two years, and formed great friendships with its attendants. Yet there 
-          were increasingly many weeks when I was the only person to drop off scraps, even though the service was available all year. Our course tasked us with 
-          trying to find a hydroponic solution to a food system issue. Some of the various public growing spaces in the neighborhood may be able to foray into 
-          hydroponics to help draw interest in both their activities and the practice itself. That could ultimately strengthen the community, food education, and 
-          give these organizations and services opportunities to cross promote.
+        <!-- Why not just keep this as one large <p>?
+        </p><p class="sbjctmatter"> -->
+          Additionally, some local composting services in our neighborhood have been defunded and terminated because of low or improper use. 
+          I shared compost with the Cypress Hills GROWNYC Farmstand for most of the past two years, and formed great friendships with its attendants. 
+          Yet there were increasingly many weeks when I was the only person to drop off scraps, even though the service was available all year. 
+          <br>
+          Our course tasked us with trying to find a hydroponic solution to a food system issue. Some of the various public growing spaces in 
+          the neighborhood may be able to foray into hydroponics to help draw interest to both their activities and the practice itself. That 
+          could ultimately strengthen the community, food education, and give these organizations and services opportunities to cross promote.
           <br>
           <br>
+          <!-- Include images of the food pantries I volunteer at or see, and their locations on a map! -->
         </p>
         <p class="sbjctmatter">
+          <h5><span class="underln">Pertinent Documents</span></h5>
           <dl>
-          <dt>
-            <a href="https://docs.google.com/document/d/19CWTEndkekKxKx_4z7eoimrn7FAE0YzH_BvaWHXe3Jk/edit?usp=sharing">Needs Assessment of Pink Prospects</a></dt>
-            <dd>This is the document of adjudging how compatible my crop, farm system, and site may be</dd>
-          <dt>
-            <a href="https://docs.google.com/document/d/1UDP3I4bN-dP5tNvWXbjvXe5l221FeB7PsEWjWtmXOdI/edit?usp=sharing">Farm Planning Document</a></dt>
-            <dd>The file in which I gathered the known needs of my crop and observed site conditions</dd>  
+            <dt>
+            <a href="https://docs.google.com/document/d/19CWTEndkekKxKx_4z7eoimrn7FAE0YzH_BvaWHXe3Jk/edit?usp=sharing">
+              Needs Assessment of Pink Prospects
+            </a>
+            </dt>
+              <dd>This is the document of adjudging how compatible my crop, farm system, and site may be
+              </dd>
+            <dt>
+            <a href="https://docs.google.com/document/d/1UDP3I4bN-dP5tNvWXbjvXe5l221FeB7PsEWjWtmXOdI/edit?usp=sharing">
+              Farm Planning Document
+            </a>
+            </dt>
+              <dd>The file in which I gathered the known needs of my crop and observed site conditions
+              </dd>  
           </dl>  
         </p>
 
@@ -155,41 +197,55 @@
           A local, outdoor hydroponics system should be tuned to at least the following points:
           <ul> 
           <li>Location and available space</li> 
-            Systems indoors at home are generally safe and the easiest to access, but need artificial lighting.
-            <br>Outdoor systems may ask for more of your time and diligence for troubleshooting and maintenance.
-            <br>A community space still needs clearance for its own personnel and activity.
+            - Systems indoors at home are generally safe and the easiest to access, but need artificial lighting.
+            <br>- Outdoor systems may ask for more of your time and diligence for troubleshooting and maintenance.
+            <br>- A community space still needs clearance for its own personnel and activity.
+
           <li>Environmental factors</li>
-            Are the conditions right for the welfare of personnel, crop, and the system itself?
-            <br>Does amaranth befit the climate and weather? Heavy wind can be an issue for tall crops.
-            <br>My system may resort to solar power, which will need me to orient a panel properly for the best effect.
+            - Are the conditions right for the welfare of personnel, crop, and the system itself?
+            <br>- Does amaranth befit the climate and weather? Heavy wind can be an issue for tall crops.
+            <br>- My system may resort to solar power, which will need me to orient a panel properly for the best effect.
+
           <li>Legal permission</li>
-            Would I even be allowed to establish this system? 
-            <br>Some public locations may have regulation against it, or require permits and such.
+            - Would I even be allowed to establish this system? 
+            <br>- Some public locations may have regulation against it, or require permits and such.
+          
           <li>Sustainability</li> 
-            These are the fundaments of how well and soundly my system and service may perform in the long term. 
-            <br>Even factors like the time your plants take to mature can contribute.
-            <br>Encouraging others to try it for themselves is also valuable.
-            <br>For your operation to persist (especially if it expands,) you may need helpers, and you'll need to inform them thoroughly!
-          <li>Benefits/ Appeal</li>
-            These can resemble elements of sustainability, but are also nuanced. 
-            <br>I could have offer an edible crop, yet potentially lose favor if no guests want it.
-            <br>Thankfully, many of the people who asked about my project in this neighborhood love callaloo
+            - These are the fundaments of how well and soundly my system and service may perform in the long term. 
+            <br>- Even factors like the time your plants take to mature can contribute.
+            <br>- Encouraging others to try it for themselves is also valuable.
+            <br>- For your operation to persist (especially if it expands,) you may need helpers, and you'll need 
+            to inform them thoroughly!
+          
+          <li>Benefits/Appeal</li>
+            - These can resemble elements of sustainability, but are also nuanced. 
+            <br>- I could offer an edible crop, yet potentially lose favor if no guests want it.
+            <br>*Thankfully, many of the people who asked about my project in this neighborhood love callaloo
+
           <li>Documentation of procedures, safety, and plant health</li>
-            Logging procedures well is a fine way to initiate others to hydroponics. 
-            <br>Instructions should be thorough, but simple, and introduce a reader to necessary terms. 
-            <br>If you don't monitor plant health, you'll be worse at tracing problems or repeating successes.
-            <br>As a system that develops edible plants, cleanliness is especially important in ALL plant operations and system maintenance
+            - Logging your procedures well is a fine way to initiate others to hydroponics. 
+            <br>- Instructions should be thorough, but simple, and introduce a reader to necessary terms. 
+            <br>- If you don't monitor plant health, you'll be worse at tracing problems or repeating successes.
+            <br>- As a system that develops edible plants, cleanliness is especially important in ALL plant operations and system maintenance, 
+            even down to the types of plant containers you use.
+
           <li>Period of operation</li>
-          Operating seasonally limits volume of produce, yet growing year round requires more resources, development, and possibly personnel. 
-          <br>You may need to relocate the system or become familiar with additional crops to function continuously.
-          <br>It could be prudent to scale the size and timing of your operation to the amount of time you're willing to allot.
+          - Operating seasonally limits volume of produce, yet growing year round requires more resources, development, and possibly personnel. 
+          <br>- You may need to relocate the system or become familiar with additional crops to function continuously.
+          <br>- It could be prudent to scale the size and timing of your operation to the amount of time you're willing to allot.
+          <br>- Pre-starting your seeds and growing from clones are ways to use your outdoor growing season more efficiently, but the latter 
+          may require experience.
+
           <li>Plant casualties</li>
-          Even great farms and farmers account for a margin of loss. Not all seeds succeed.
+          - Even great farms and farmers account for a margin of loss. Not all seeds succeed.
+          <br>- Crop failure can be a result of seed quality, care, illness, infestation, weather, or system neglect.
+          <br>- Maladies may even have similar symptoms. It may be practical to know some common illnesses of your crop in advance.
           <ul>
-        </p>
-        <p class="sbjctmatter">
+          </p>
+          
           <h5><span class="underln">My recommendations and reasoning</span></h5>
-           I planned this system at its initial scale in respect to my inexperience and its power source. That extends to its seasonality. This 
+          <p class="sbjctmatter">
+            I planned this system at its initial small scale in respect to my inexperience and its power source. That extends to its seasonality. This 
            is equal parts a test of myself, the plants + hydroponics, and public interest. 
           <br>
           To increase the worth of the project, I'd want it to inform the community, not just through exposure to hydroponics, but perhaps 
@@ -198,7 +254,14 @@
            able to focus some of the off season on seed storage or starting instead. 
           <br>
           Our class site visits were all highly informative, but so was consulting locals. My gardening neighbors, the Dixons, raise many plants, 
-          including some types of amaranth. They taught me of its health benefits, repeat harvesting, and how easily it can spread.
+          including some types of amaranth. They taught me of its health benefits, repeat harvesting, and how easily it can spread. It may be best 
+          to start by raising nonflowering amaranth species.
+          <br>
+          <br>
+          After all, Mrs. Dixon warned that 
+          <span class="ital">"Most of the amaranth growing in her garden wasn't planted."</span> 
+          It had been sown by wind or animals flying by. That's impressive, but must be monitored carefully in a public growing space.
+          <!-- Include photos of the Dixons and their garden here! -->
         </p>  
         
       </div>
@@ -210,6 +273,9 @@
           There are several components to the problems I want to address. There seems to be a general lack of public info on the composting process, 
           assuring that only homes with gardeners may easily learn of it. That lack of attention and misuse of the service easily gets it demonetized. 
           It's especially disappointing since we have so many nice local farms.
+          <br>
+          <br>
+          As stated earlier, some of the public may be unaware of the free food distributions available to serve them.
         </p>
         
         <!-- Commented out until I have time to upload the content
@@ -220,8 +286,8 @@
         </h4></figcaption>
         </figure> -->
         </div>
+        
         <button class="accordion">
-
         <!-- Link to my Project Plan Template   -->
           <h2 id="projmlstn">4. Project Milestones</h2>
         </button>
@@ -241,18 +307,20 @@
 <!-- Formatting options include a ul, ol, or a pair of brs -->
       <p class="sbjctmatter">
         <ol>
-          <li>Having to defer many solutions that I couldn't incorporate hydroponics into, like seedkeeping or a traveling community seed bank and a 
+          <li>Having to defer many solutions that I couldn't incorporate hydroponics into, like seedkeeping, a traveling community seed bank, and a 
             composting incentive program
             </li>
-          <li>Likewise for several great suggestions and desires of my supporters, like teaching about and using the various "wild greens" in our neighborhood. 
-            Wild greens are plants which are commonly regarded as weeds, yet can be useful as food or medicine, and are readily available since they grow easily.
+          <li>Likewise for several great suggestions and desires of my supporters. One of the Dixons suggested a program that teaches about the 
+            various "wild greens" in our neighborhood and their uses. Wild greens are plants which are commonly regarded as weeds, yet can be 
+            useful as food or medicine, and are readily available since they're hardy and grow easily.
             </li>
           <li>The realization that dates and starfruit either aren’t very compatible with beginner hydroponics, take too long to yield, etc.
             </li>
-          <li>Having learned that Pink Houses Community Farm has no electrical power, I felt forced to use a system that doesn’t need electricity, which wouldn’t 
-            have been in the spirit of this course or project.
+          <li>Having learned that Pink Houses Community Farm has no electrical power, I felt forced to use 
+            a system that doesn’t need power, which wouldn’t have been in the spirit of this course or project.
             </li>
-          <li>Difficulty and indecision finalizing my farm system design, which has also manifested in other elements of my course work since it’s so crucial.
+          <li>Difficulty and indecision finalizing my farm system design, which has also manifested in other 
+            elements of my course work since it’s so crucial.
             </li>
         </ol> 
       </p>
@@ -262,27 +330,63 @@
     <p class="sbjctmatter">
       <ol>
         <li>The lack of electrical power at Pink Houses Community Farm eventually lead me to learn 
-          of alternatives! There are relatively inexpensive solar-powered drip irrigation pumps 
-          <!-- (like these (link link))  -->
-          that should be great for a small system like this. Later, I was told of another alternative 
-          hydroponic irrigation system that doesn’t need electrical power at all!
+          of alternatives! There are relatively inexpensive 
+          <a href="https://iraddy.com/products/ws-2-solar-drip-irrigation-kit?srsltid=AfmBOooc4RIk1fCMeaKTvQNBaOAEdjU8CVFBW4x8ahzR7yI0xWvfKTHxsolar-powered"
+             title="Solar drip irrigation pump by Raddy"> 
+            drip irrigation pumps</a> 
+          that should be great for a small system like this. Later, I was also told of another 
+          alternative hydroponic irrigation system that doesn’t need electrical power at all! 
+          I'd like to test it once I've taken more time to study it.
           </li>
-        <li>My first choice of crop wasn’t suitable for hydroponics of my inexperience, but I 
+        <li>My first choice(s) of crop wasn’t suitable for hydroponics of my inexperience, but I 
           learned that callaloo is perhaps an ideal starter crop. To list a few benefits, it is apparently 
           easy to grow hydroponically, drought tolerant, and accepts a wide range of growing zones. 
           It's also high in iron, fiber, and vitamins A and C. There are many species of amaranth/callaloo, 
           some of which flower, and in many cases, virtually all parts of the healthy plant case be used. 
-          I've even read that the grains can be good feed for farm animals.  
+          I've even read that the grains can be good feed for farm animals.
+          <br>Better yet, surprisingly few people curious about my project dislike callaloo. I've yet to 
+          try it myself, though.  
           </li>
+        <li>If I realize this project, am competent in its maintenance, and ever want to extend its growing 
+          season, community farm staff have suggested I request to use a spare room in nearby community center. 
+          Furthermore, it may be possible to grow within the hoophouse at the community farm, or pivot to 
+          cold-tolerant crops like cabbages when amaranth is out of season.
+        </li>
       </ol> 
-    </p>
     </p>
   </div>
 </section>
 <section id="vizDat">
   <button class="accordYL"><h1>7. Visual Data</h1></button>
   <div class="panel">
-    <p class="sbjctmatter">None yet. A map of nearby community farms I considered will soon exist. There will be more if/once this project comes to be</p>
+    <p class="sbjctmatter">
+      To begin, here is a map view of several public growing spaces I 
+      considered:
+      <!-- Vertically align the tops of these images the next time I work on this page! -->
+<figure id="overgarden">
+  <img src="GitPics/crywlgrdn.png"
+       title="Crystal Wells"
+       id="crwell">
+  <img src="GitPics/greengemmsgrdn.png"     
+       title="Greens Gems, which also tends chickens and periodically offers eggs">
+  <figcaption></figcaption>
+</figure>
+    </p>
+
+    <p class="sbjctmatter">
+    I ultimately settled for Pink Houses Community Farm. It's the closest of all, and thus swiftest 
+    to reach for maintenance. It has passionate staff and several volunteers and visitors, so I know 
+    my system would be seen. There are also many tools are available, including a hoophouse.
+<figure id="thewinner">
+  <img src="GitPics/pinkhsscmfrm.png"
+       title="appealing locations">
+  <figcaption>The numbered spots are the four locations in the community farm that seem best for my system. 
+    <br>-1 wouldn't obstruct any other plants, but receives the least direct light.
+    <br>-2 is close to a water line and tools, but perhaps often shaded.
+    <br>-3 is near a water line and well lit. But the plants may deny light to shorter ones if they grow particularly tall.
+    <br>-4 is a hoophouse (if not a greenhouse.) It gets excellent lighting, but doesn't have direct water service, and is frequented by stray cats.</figcaption>
+</figure>
+    </p>
   </div>
 </section>
 <section id="closing">

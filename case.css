@@ -6,7 +6,7 @@
 
 header h1 {
     text-align: center;
-    font-family: "Pixelify Sans";
+    font-family: "Pixelify Sans", system-ui;
     font-weight: bolder;
     border-radius: 45px 45px 0 0;
 }
@@ -18,6 +18,21 @@ header h1 {
 p.pagedescript {
     text-align: center;
     font-size: 1.5rem;
+}
+
+p.sbjctmatter {
+    /* This indents all of my Ps with subject content, only */
+    text-indent: 1em; 
+    margin: 0;
+    font-family: "Futura", system-ui;
+}
+
+.cntnts {
+    font-family: "Futura", system-ui;
+}
+
+#prjparts li {
+    font-weight: bold;
 }
 
 #leadinginfo {
@@ -118,7 +133,34 @@ dd {
         text-decoration: underline;
       }
 
-/*Leftover css from other file. Test it!
+      /* Styling of map image  */
+      #bklynmap>img {
+    max-width: 850px;
+    width: 70%;
+}    
+
+      .underln {
+    text-decoration:underline;
+}
+
+      #overgarden>img {
+        max-width: 400px;
+        width: 40%;
+      }  
+
+      #overgarden>figure {
+        vertical-align: text-top;
+      }
+
+       #thewinner>img {
+        max-width: 550px;
+        width: 50%;
+       }
+
+
+
+
+      /*Leftover css from other file. Test it!
 h2{
     font-weight:bold;
 }
@@ -128,3 +170,7 @@ aside{
 footer{
     text-align:left;
 }*/
+
+
+/* This may be a good way to indent the content paragraphs, which should be given their own classes. */
+/* p { text-indent: 1em; margin: 0 } */
