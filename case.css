@@ -31,6 +31,10 @@ p.sbjctmatter {
     font-family: "Futura", system-ui;
 }
 
+.ital {
+  font-style: italic;
+}
+
 #prjparts li {
     font-weight: bold;
 }
@@ -39,34 +43,48 @@ p.sbjctmatter {
     padding-left: 15px;
 }
 #TOC, .cntnts {
-    background-color: var(--yellow);
+    background-color: var(--yellow);  
 }
+
 section h1, h2 {
     text-align: left;
     font-family: "Pixelify Sans";
     font-weight: bold;
 }
+
 h1#leadinginfo {
     text-align: center;
 }
+
 h1#TOC {
     text-align: center;
 }
+
 dd {
     font-style: italic;
 }
+
 #execSum, #prjparts {
 	background-color: var(--gray);
     padding-left: 15px;
 }
+
 #adverse, #aha, #vizDat {
     background-color: var(--yellow);
     padding-left: 15px;
 }
+
+#vizDat, #execSum {
+  padding-bottom: 15px;
+}
+
 #closing {
     background-color: var(--gray);
     padding-left: 15px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
+
 #endit:not(footer) {
 /*Adjusted to only have a border above contacts*/  
     background-color: var(--red);
@@ -74,6 +92,20 @@ dd {
     padding-left: 15px;
     padding-top: 1px;
 }
+
+#faileddrafts figcaption {
+  max-width: 525px;
+}
+
+figcaption.mytarget {
+  max-width: 525px;
+}
+
+/* Underline for spans...but is it redundant or easier to do some other way? */
+.underln {
+  text-decoration:underline;
+}
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     /*background-color: #eee;*/
@@ -133,34 +165,58 @@ dd {
         text-decoration: underline;
       }
 
+      /* Image styling */
       /* Styling of map image  */
       #bklynmap>img {
     max-width: 850px;
     width: 70%;
-}    
+      }    
 
-      .underln {
-    text-decoration:underline;
-}
+      figure#thewinner img {
+        align-items: start;
+        min-width: 450px;
+      }     
 
-      #overgarden>img {
+      #grngem, #crwell, #pinkcomm, #eupine {
+        height: 300px;
+      }
+
+      #thewinner>img {
+        max-width: 550px;
+        min-width: 450px;
+        width: 50%;
+      }
+
+      figure#faileddrafts img {
+        display: flex;
+        flex-direction: column;
+        min-height: 425px;
+        max-width: 550px;
+        position: relative;
+      }
+
+      img#systemside {
+        max-width: 650px;
+        min-width: 450px;
+        position: relative;
+
+      }
+
+      /* #overgarden>img {
         max-width: 400px;
         width: 40%;
       }  
 
       #overgarden>figure {
         vertical-align: text-top;
-      }
+      } */
 
-       #thewinner>img {
-        max-width: 550px;
-        width: 50%;
-       }
+      
 
 
 
 
-      /*Leftover css from other file. Test it!
+      /*Leftover css from other file. Test it! Move it to a note file after that.
 h2{
     font-weight:bold;
 }
