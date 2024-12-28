@@ -71,8 +71,11 @@
     <div class='col query'> 
       <!-- <h1>Plant Identifier</h1> -->
     <p>Please show your plant(s) in question.
-      <br>I am presently out of tokens! This page must be recoded to function again. 
-      <br>My apology for any disappointment. ETA = 12/28/2024
+      <!-- ALERT MESSAGE WHEN OUT OF TOKENS
+      Only activate this alert message when an issue arises. Provide an ETA for the fixes. Ideally, I'd have the 
+      page coded to debounce inputs so this is less likely to happen. -->
+      <!-- <br>I am presently out of tokens! This page must be recoded to function again. 
+      <br>My apology for any disappointment. ETA =  -->
     </p>
     </div>
   </div>
@@ -87,9 +90,10 @@
               accept="image/*"
               capture="camera"  
               required>
-      <label class="custom-file-label" for="photoInput"></label>
+      <label class="custom-file-label" for="photoInput">Upload</label>
     </div>
   </div> 
+
   <div class="col-3">
     <button type="button" 
             class="btn btn-success" 

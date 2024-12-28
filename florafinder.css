@@ -20,13 +20,19 @@ header>:not(nav) {
     margin-bottom: 0;
 }
 
+/* This transparent background should remove the white space around the 
+rounded borders below the footer */
+body {
+    background-color: transparent !important;
+}
+
 .showline {
     background-color: rgb(185, 185, 184);
 }
 
 /* div> */
 .container.showline {
-    width: 100% !important;
+    max-width: 100% !important;
     /* margin-left: 0 !important;
     margin-right: 0 !important; */
 }
@@ -40,9 +46,70 @@ header>:not(nav) {
     
 } */
 
+/* Can this properly align the button container? */
+div.row.pt-3.justify-content-center.showline {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   width: 100%;
+   min-width: 500px;
+}
+
+/* styling for Upload button */
+.custom-file-label {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    background-color:#0F6EFD;
+    border-radius: 0.35rem;
+    display: flex;
+    align-items: center;
+    }
+    
+    /* .custom-file-label::after {
+    content: "Upload"
+    } */
+    
+    .custom-file-input:valid+.custom-file-label::after {
+    content: "File uploaded!";
+    }
+    
+    .custom-file {
+    position: relative;
+    display: inline-block;
+    }
+
+    .custom-file-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    }
+
+    .custom-file-input:focus+.custom-file-label, .custom-file-input.has-focus+.custom-file label {
+    border-color: red;
+    box-shadow: 0 0 0 0.2rem rgba(0. 123, 255, 0.25);
+    }
+
+    .custom-file>label:hover {
+        cursor: pointer;
+        background-color:#0c3a80;
+        
+    }
 
 #plantidspace {
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .rounded.magsnap {
