@@ -17,7 +17,8 @@ function uploadAndIdentifyPlantID(){
         const base64Image = e.target.result;
         console.log('base64Image',base64Image);
         // store all the variables for the API call
-        const apiKey = 'dYFKFygExogD3BnmeugrsqP4xF23s68tKclYIfbkPRpo8GJYhc';
+        // 12-27-24 attempt to change API key. Old one is in my notes.
+        const apiKey = 'KC6CD5x3GdJEXZmoFSiudYey9db1zltyjvVilBXQejlFv27EMG';
         const latitude = 49.207;
         const longitude = 16.608;
         const health = 'all';
