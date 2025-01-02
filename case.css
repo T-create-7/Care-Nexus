@@ -181,6 +181,20 @@ figcaption.mytarget {
         height: 300px;
       }
 
+      .neighborhood {
+        height: 200px;
+      }
+
+      .amaran {
+        max-width: 300px;
+        min-width: 240px;
+        width: 33%;
+      }
+
+      img.grateful {
+        height: 380px;
+      }
+
       #thewinner>img {
         max-width: 550px;
         min-width: 450px;
