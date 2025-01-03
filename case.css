@@ -216,6 +216,13 @@ figcaption.mytarget {
 
       }
 
+      img.drip {
+        max-width: 500px;
+        min-width: 450px;
+        position: relative;
+        padding-bottom: 10px;
+      }
+
       /* #overgarden>img {
         max-width: 400px;
         width: 40%;
