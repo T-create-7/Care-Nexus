@@ -223,6 +223,26 @@ figcaption.mytarget {
         padding-bottom: 10px;
       }
 
+      @media screen and (max-width: 530px) {
+        /* Messy test styling to reduce images for mobile. Unfortunately, 
+        this type of coding isn't mobile first... 
+        Also, there must be a better way to style all of these images at once.*/
+        img 
+          {max-width: 440px;}
+        #bklynmap>img 
+          {min-width: 400px;}  
+        figure#thewinner>img 
+          {min-width: 440px;}
+        figure#faileddrafts>img 
+          {max-width: 440px;}
+        figure#messup>img.drip
+          {max-width: 440px;}
+        figure>img 
+          {max-width: 440px;}
+        img#systemside 
+          {max-width: 440px;}  
+      }
+
       /* #overgarden>img {
         max-width: 400px;
         width: 40%;
