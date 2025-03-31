@@ -1,0 +1,98 @@
+
+/* _______________________________
+Styling copied from older pages
+_______________________________ */
+
+:root {
+    --red: rgb(191 43 17);
+    --yellow: rgba(255,255,94,0.8);
+    --gray: rgba(185,185,184,0.7);
+    --windowgray: rgba(185,185,184,0.38);
+    --windowyellow: rgba(255,255,94,0.6);
+    }
+
+header h1 {
+    text-align: center;
+    font-family: "Pixelify Sans", system-ui;
+    font-weight: bolder;
+    border-radius: 45px 45px 0 0;
+}
+
+#pagename, #leadinginfo, .pagedescript {
+    background-color: var(--red);
+}
+
+p.pagedescript {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+p.sbjctmatter {
+    /* This indents all of my Ps with subject content, only */
+    text-indent: 1em; 
+    margin: 0;
+    font-family: "Futura", system-ui;
+}
+
+section h1, h2 {
+    text-align: left;
+    font-family: "Pixelify Sans";
+    font-weight: bold;
+}
+
+/* ____________________________
+New styling for this project
+____________________________ */
+
+img.neStatus {
+    width: 350px;
+    min-width: 240px;
+}
+
+.nescondition>h3 {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Futura", system-ui;
+}
+
+table>caption {
+    caption-side: top;
+}
+
+/* Border image attempt; give some sections a wasp nest image background */
+table#statesofnest, tr, td, th{
+    border: 35px solid;
+    border-image-source: url(Gitpics/mywaspproject/nestfragmentborder.JPG);
+    border-image-slice: 40 fill;
+    border-collapse: collapse;
+    margin: 12px;
+    padding: 15px;
+}
+
+table#statesofnest td, table#statesofnest th{
+    width: 25%;
+    border-left: 20px solid black;
+    border-right: 20px solid black;
+}
+
+th.nescondition {
+    background-color: var(--gray);
+}
+
+tr#condescript>td {
+    background-color: var(--windowgray);
+}
+
+table#statesofnest {
+    background-image: url(Gitpics/mywaspproject/IMG_1392waspaperbackground.JPG);
+    background-position: center;
+}
+
+td.nesprite {
+    background-color: var(--windowyellow);
+}
+
+img.colorfulnest {
+    max-width: 200px;
+    height: auto;
+}
