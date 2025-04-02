@@ -22,10 +22,35 @@ header h1 {
     background-color: var(--red);
 }
 
+#TOC, .cntnts {
+    background-color: var(--yellow);
+}
+
+h1#TOC {
+    text-align: center;
+}
+
+#execSum, #prjparts, #closing {
+	background-color: var(--gray);
+    /* padding-left: 15px; */
+}
+#adverse, #aha, #vizDat {
+    background-color: var(--yellow);
+    /* padding-left: 15px; */
+}
+
 p.pagedescript {
     text-align: center;
     font-size: 1.5rem;
 }
+
+#endit:not(footer) {
+    /*Adjusted to only have a border above contacts*/  
+        background-color: var(--red);
+        border-radius: 0 0 45px 0;
+        /* padding-left: 15px; */
+        /* padding-top: 1px; */
+    }
 
 p.sbjctmatter {
     /* This indents all of my Ps with subject content, only */
@@ -40,15 +65,127 @@ section h1, h2 {
     font-weight: bold;
 }
 
+span.underln {
+    text-decoration: underline;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    /*background-color: #eee;*/
+    background-color: var(--gray);
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: 8px var(--red);
+    outline-style: dotted;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #969696;
+  }
+
+.accordYL {
+        background-color: var(--yellow);
+        margin: 10px 0 10px 0;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+        border: 8px var(--red);
+        outline-style: dotted;
+        transition: 0.4s;
+    }
+      
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active, .accordYL:hover {
+        background-color: hsl(61, 38%, 49%);
+      }
+
+      /* Styling for the breadcrumbs */
+
+    ul.breadcrumb {
+        padding: 10px 16px;
+        list-style: none;
+        background-color: #eee;
+      }
+
+    ul.breadcrumb li {
+        display: inline;
+        font-size: 18px;
+      }
+
+    ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+        content: "/\00a0";
+      }
+
+    ul.breadcrumb li a {
+        color: #0275d8;
+        text-decoration: none;
+      }
+
+    ul.breadcrumb li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+      }
 /* ____________________________
 New styling for this project
 ____________________________ */
 
-img.neStatus {
-    width: 350px;
-    min-width: 240px;
+/* Give text comfortable space from the edge */
+body, section#leadinginfo, span.underln, h2#recomnd {
+    padding: 0 15px;
+    /* margin: 0 15px; */
 }
 
+/* Map styling */
+
+iframe#waspmap {
+    margin: 0 auto;
+    width: 85%;
+    height: 550px;
+    display: block;
+    padding-bottom: 15px;
+}
+
+p:not(:last-of-type) {
+    margin-bottom: 0;
+}
+
+p {
+    padding: 0 15px;
+    font-size: 1.15rem
+}
+
+section {
+    padding-left: 15 px;
+}
+
+span.term {
+    text-shadow: 0 1px 2px var(--red);
+}
+
+/* Image/Video styling */
+
+img.colorfulnest {
+    max-width: 200px;
+    height: auto;
+}
+
+audio#songofwasp {
+    display: block;
+}
+
+img.neStatus {
+    width: 320px;
+    min-width: 240px;
+}
+/* -------------
+TABLE STYLING 
+------------- */
 .nescondition>h3 {
     text-align: center;
     font-weight: bold;
@@ -62,7 +199,7 @@ table>caption {
 /* Border image attempt; give some sections a wasp nest image background */
 table#statesofnest, tr, td, th{
     border: 35px solid;
-    border-image-source: url(Gitpics/mywaspproject/nestfragmentborder.JPG);
+    border-image-source: url(Gitpics/mywaspproject/nestcellsbackground.JPG);
     border-image-slice: 40 fill;
     border-collapse: collapse;
     margin: 12px;
@@ -81,18 +218,22 @@ th.nescondition {
 
 tr#condescript>td {
     background-color: var(--windowgray);
+    vertical-align: top;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px var(--yellow);
+}
+
+th.nescondition>h3 {
+    text-shadow: 0px 8px 4px var(--yellow);
 }
 
 table#statesofnest {
     background-image: url(Gitpics/mywaspproject/IMG_1392waspaperbackground.JPG);
     background-position: center;
+    /* overflow-x: auto; */
 }
 
 td.nesprite {
     background-color: var(--windowyellow);
 }
 
-img.colorfulnest {
-    max-width: 200px;
-    height: auto;
-}
