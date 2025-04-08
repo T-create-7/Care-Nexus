@@ -141,6 +141,24 @@ body, section#leadinginfo, span.underln, h2#recomnd {
     /* margin: 0 15px; */
 }
 
+.aspect>ul>li {
+    max-width: 55%;
+}
+
+p.sbjctmatter.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+}
+
+/* Have this display on a top ROW instead on mobile devices */
+img#searchtools {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 320px;
+    min-width: 240px;
+}
+
 /* Map styling */
 
 iframe#waspmap {
@@ -149,6 +167,7 @@ iframe#waspmap {
     height: 550px;
     display: block;
     padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 p:not(:last-of-type) {
@@ -183,6 +202,91 @@ img.neStatus {
     width: 320px;
     min-width: 240px;
 }
+
+img#waspbannerdrawing {
+    margin: 15px auto;
+    display: block;
+    width: 90%;
+    max-width: 1800px;
+    padding-bottom: 15px;
+}
+
+/* Commented out to test a grid layout; remove if effective!
+img#searchtools {
+    width: 320px;
+    min-width: 240px;
+    float: inline-start;
+    padding-right: 15px;
+} */
+
+figure#deceptors {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: 320px 320px;
+    grid-template-rows: auto auto; 
+    gap: 15px;
+    background-color: var(--yellow);
+    background-clip: padding-box;
+    width: fit-content;
+}
+
+div.pic1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    }
+
+div.pic2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+div.pic3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+img.misleadingthings {
+    width: 320px;
+    min-width: 240px;
+    
+}
+
+img.misleadingthings:hover {
+    transform: scale(1.4);    
+}
+
+/* img.misleadingthings:nth-of-type(2), img.misleadingthings:nth-of-type(3) {
+    display: inline-block;
+} */
+
+figure#mapforeafter {
+    padding: 0 15px;
+    width: 575px;
+    height: auto;
+    background-color: var(--yellow);
+    background-clip: padding-box;
+    align-items: center;
+    margin-left: 15px;
+}
+
+img.mapmethods {
+    width: auto;
+    height: 400px;
+    padding-bottom: 15px;
+}
+
+figure#mapforeafter>figcaption {
+    caption-side: bottom;
+    width: 530px;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
+
 /* -------------
 TABLE STYLING 
 ------------- */
@@ -192,7 +296,11 @@ TABLE STYLING
     font-family: "Futura", system-ui;
 }
 
-table>caption {
+table#statesofnest>caption {
+    caption-side: top;
+}
+
+#deceptors>figcaption {
     caption-side: top;
 }
 
@@ -228,7 +336,7 @@ th.nescondition>h3 {
 }
 
 table#statesofnest {
-    background-image: url(Gitpics/mywaspproject/IMG_1392waspaperbackground.JPG);
+    background-image: url(Gitpics/mywaspproject/IMG1392waspaperbackground.JPG);
     background-position: center;
     /* overflow-x: auto; */
 }
