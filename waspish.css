@@ -61,7 +61,7 @@ p.sbjctmatter {
 
 section h1, h2 {
     text-align: left;
-    font-family: "Pixelify Sans";
+    font-family: "Pixelify Sans", system-ui;
     font-weight: bold;
 }
 
@@ -149,6 +149,22 @@ p.sbjctmatter.grid {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 15px;
+}
+
+.introcontainer {
+    position: relative;
+    text-align: center;
+}
+
+.notemark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: "Pixelify Sans", system-ui;
+    font-size: 3.0em;
+    transform: translate(-50%, -50%);
+    background: var(--windowyellow);
+    width: 85%;
 }
 
 /* Have this display on a top ROW instead on mobile devices */
@@ -252,11 +268,11 @@ div.pic3 {
 img.misleadingthings {
     width: 320px;
     min-width: 240px;
-    
 }
 
 img.misleadingthings:hover {
-    transform: scale(1.4);    
+    transform: scale(1.4);
+    transform-origin: top left;   
 }
 
 /* img.misleadingthings:nth-of-type(2), img.misleadingthings:nth-of-type(3) {
@@ -287,6 +303,62 @@ figure#mapforeafter>figcaption {
     text-align: center;
 }
 
+figure#waspsonbuildings {
+    display: inline;
+    background-color: var(--yellow);
+}
+
+img.observe {
+    width: 80px;
+    height: auto;    
+}
+
+img.pageconcepts {
+    width: 195px;
+    height: auto;
+}
+
+img.pageconcepts:not(:last-of-type) {
+    margin-bottom: 5px;
+}
+
+/* Reminder: Have these images magnify differently on small displays! */
+img.observe:hover, img.pageconcepts:hover {
+    position: absolute;
+    transform: scale(4.4);
+    transform-origin: top left;
+}
+
+figure#draftpages {
+    /* display: inline; */
+    background-color: var(--yellow);
+    background-clip: padding-box;
+    /* justify-content: center; */
+    /* width: fit-content; */
+    width: 425px;
+    min-width: 170px;
+    height: auto;
+    padding: 15px 0 15px 15px;
+    margin-left: 15px;
+    position: relative;
+}
+
+li.aspect>ul, ul#nestcount>li {
+    list-style-image: url(GitPics/mywaspproject/liststinger.png);
+}
+
+/* #waysofdoing>li.aspect:not(:last-of-type) {
+    padding-bottom: 5px;
+} */
+
+li.aspect {
+    padding-top: 35px;
+}
+
+ul#nestcount {
+    margin-left: 15px;
+}
+
 /* -------------
 TABLE STYLING 
 ------------- */
@@ -307,7 +379,7 @@ table#statesofnest>caption {
 /* Border image attempt; give some sections a wasp nest image background */
 table#statesofnest, tr, td, th{
     border: 35px solid;
-    border-image-source: url(Gitpics/mywaspproject/nestcellsbackground.JPG);
+    border-image-source: url(GitPics/mywaspproject/nestcellsbackground.JPG);
     border-image-slice: 40 fill;
     border-collapse: collapse;
     margin: 12px;
@@ -336,7 +408,7 @@ th.nescondition>h3 {
 }
 
 table#statesofnest {
-    background-image: url(Gitpics/mywaspproject/IMG1392waspaperbackground.JPG);
+    background-image: url(GitPics/mywaspproject/IMG1392waspaperbackground.JPG);
     background-position: center;
     /* overflow-x: auto; */
 }
