@@ -308,14 +308,59 @@ figure#waspsonbuildings {
     background-color: var(--yellow);
 }
 
+figure#nestructure, figure#wingingestswing {
+    margin: 10px 15px;
+    padding: 15px;
+    background-color: var(--windowyellow);
+    background-clip: padding-box;
+    border-radius: 0 55px 55px 0
+}
+
+figure#nestructure>img {
+    height: 350px;
+    width: auto;
+    padding-top: 5px;
+}
+
+figure#nestructure>img:first-of-type {
+    border-radius: 75px 0 0 0;
+}
+figure#nestructure>img:last-of-type {
+    border-radius: 0 0 75px 0;
+}
+
+figure#wingingestswing>img {
+    height: 300px;
+    width: auto;
+}
+
+#hexandhex>img {
+    height: 250px;
+    width: auto;
+    margin-left: 15px;
+}
+
+#hexandhex>figcaption {
+    caption-side: bottom;
+    max-width: 375px;
+    background-color: var(--yellow);
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    margin-left: 15px;
+    padding: 0 45px;
+}
+
 img.observe {
     width: 80px;
-    height: auto;    
+    height: auto;  
 }
 
 img.pageconcepts {
     width: 195px;
     height: auto;
+    position: relative;
 }
 
 img.pageconcepts:not(:last-of-type) {
@@ -324,9 +369,30 @@ img.pageconcepts:not(:last-of-type) {
 
 /* Reminder: Have these images magnify differently on small displays! */
 img.observe:hover, img.pageconcepts:hover {
-    position: absolute;
+    position: relative;
     transform: scale(4.4);
     transform-origin: top left;
+    display: block;
+    z-index: 10;
+}
+
+/* This is meant to style images in the final section, but doesn't seem to work. */
+/* body>div.panel>p.sbjctmatter>img.endshowing {
+    object-fit: contain;
+    display: block;
+} */
+
+img.endshowing {
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 15px;
+}
+
+img.waspimage {
+    display: inline;
+    width: 250px;
+    height: auto;
 }
 
 figure#draftpages {
@@ -343,8 +409,19 @@ figure#draftpages {
     position: relative;
 }
 
-li.aspect>ul, ul#nestcount>li {
+li.aspect>ul, ul#nestcount>li, ul#studypoint>li, ul#zrvations>li {
     list-style-image: url(GitPics/mywaspproject/liststinger.png);
+}
+
+li.aspect {
+    list-style-image: url(GitPics/mywaspproject/Stingerlisthead.png);
+    margin-left: 25px;
+}
+
+li.aspect>strong {
+    background-color: var(--windowyellow);
+    font-size: x-large;
+    background-clip: border-box;
 }
 
 /* #waysofdoing>li.aspect:not(:last-of-type) {
@@ -355,7 +432,7 @@ li.aspect {
     padding-top: 35px;
 }
 
-ul#nestcount {
+ul#nestcount, ul#studypoint, ul#zrvations {
     margin-left: 15px;
 }
 
@@ -417,3 +494,9 @@ td.nesprite {
     background-color: var(--windowyellow);
 }
 
+/* @media screen and (max-width: 600px) {
+    img { 
+     max-width: 440 px;
+     height: auto;
+ }
+ } */
