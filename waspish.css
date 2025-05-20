@@ -1,4 +1,6 @@
-
+/* -> Line 137+: New styling for this project */
+/* -> Line 475: Table styling */
+/* -> Line 532: Media queries */
 /* _______________________________
 Styling copied from older pages
 _______________________________ */
@@ -151,6 +153,13 @@ p.sbjctmatter.grid {
     gap: 15px;
 }
 
+div#hotspots.grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: auto auto auto;
+    gap: 10px; */
+}
+
 .introcontainer {
     position: relative;
     text-align: center;
@@ -199,6 +208,8 @@ section {
     padding-left: 15 px;
 }
 
+/* Effect for terms with hover definitions */
+
 span.term {
     text-shadow: 0 1px 2px var(--red);
 }
@@ -226,14 +237,6 @@ img#waspbannerdrawing {
     max-width: 1800px;
     padding-bottom: 15px;
 }
-
-/* Commented out to test a grid layout; remove if effective!
-img#searchtools {
-    width: 320px;
-    min-width: 240px;
-    float: inline-start;
-    padding-right: 15px;
-} */
 
 figure#deceptors {
     margin-left: 15px;
@@ -275,13 +278,19 @@ img.misleadingthings:hover {
     transform-origin: top left;   
 }
 
-/* img.misleadingthings:nth-of-type(2), img.misleadingthings:nth-of-type(3) {
-    display: inline-block;
-} */
-
 figure#mapforeafter {
     padding: 0 15px;
     width: 575px;
+    height: auto;
+    background-color: var(--yellow);
+    background-clip: padding-box;
+    align-items: center;
+    margin-left: 15px;
+}
+
+figure.areasofnote {
+    padding: 0 15px;
+    width: 470px;
     height: auto;
     background-color: var(--yellow);
     background-clip: padding-box;
@@ -293,6 +302,13 @@ img.mapmethods {
     width: auto;
     height: 400px;
     padding-bottom: 15px;
+}
+
+figure.areasofnote>img {
+    width: auto;
+    height: 360px;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 figure#mapforeafter>figcaption {
@@ -314,6 +330,17 @@ figure#nestructure, figure#wingingestswing {
     background-color: var(--windowyellow);
     background-clip: padding-box;
     border-radius: 0 55px 55px 0
+}
+
+picture.booksofnote {
+    margin: 10px 15px;
+    padding: 15px;
+}
+
+picture.booksofnote>img {
+   max-width: 500px;
+   height: auto;
+   margin: auto 0;
 }
 
 figure#nestructure>img {
@@ -367,7 +394,7 @@ img.pageconcepts:not(:last-of-type) {
     margin-bottom: 5px;
 }
 
-/* Reminder: Have these images magnify differently on small displays! */
+/* Reminder: Try having these images magnify differently on small displays! */
 img.observe:hover, img.pageconcepts:hover {
     position: relative;
     transform: scale(4.4);
@@ -376,13 +403,7 @@ img.observe:hover, img.pageconcepts:hover {
     z-index: 10;
 }
 
-/* This is meant to style images in the final section, but doesn't seem to work. */
-/* body>div.panel>p.sbjctmatter>img.endshowing {
-    object-fit: contain;
-    display: block;
-} */
-
-img.endshowing {
+img.endshowing, img.beehaus {
     max-width: 500px;
     height: auto;
     display: block;
@@ -409,7 +430,14 @@ figure#draftpages {
     position: relative;
 }
 
-li.aspect>ul, ul#nestcount>li, ul#studypoint>li, ul#zrvations>li {
+figure#draftpages, figure#deceptors {
+    outline-color: var(--windowgray);
+    outline-style: groove;
+    outline-width: 10px;
+    margin-top: 10px;
+}
+
+li.aspect>ul, ul#nestcount>li, ul#studypoint>li, ul#zrvations>li, dl#bookinit>li {
     list-style-image: url(GitPics/mywaspproject/liststinger.png);
 }
 
@@ -424,16 +452,23 @@ li.aspect>strong {
     background-clip: border-box;
 }
 
-/* #waysofdoing>li.aspect:not(:last-of-type) {
-    padding-bottom: 5px;
-} */
-
 li.aspect {
     padding-top: 35px;
 }
 
-ul#nestcount, ul#studypoint, ul#zrvations {
+ul#nestcount, ul#studypoint, ul#zrvations, ul#ref {
     margin-left: 15px;
+}
+
+h4 {
+    background-color: var(--windowyellow);
+    background-clip: padding-box;
+    margin-right: 55%;
+    margin-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-width: 300px;
+    border-radius: 11% 85% 85% 11% / 18% 50% 50% 13%
 }
 
 /* -------------
@@ -493,10 +528,21 @@ table#statesofnest {
 td.nesprite {
     background-color: var(--windowyellow);
 }
+/* --------
+Queries for responsive design
+-------- */
 
-/* @media screen and (max-width: 600px) {
-    img { 
-     max-width: 440 px;
-     height: auto;
- }
- } */
+@media screen and 
+(min-width: 400px) and
+(max-width: 600px)  {
+    img, figure>img, img.booksofnote, img.beehaus, img.endshowing {max-width: 350px;}
+    figure>img, img.booksofnote {height: auto;}
+    /* The deceptors figure may need its own distinct query to keep its width within the screen */
+    figure#mapforeafter, figure.deceptors {max-width: 350px;}
+    figure#mapforeafter>figcaption {max-width: 320px;}
+    figure#deceptors.grid {display: block;}
+    figure.areasofnote {max-width: 400px;}
+    figure#nestructure,figure#wingingestwing>img {height: auto;}
+    picture.booksofnote>img.printsource {max-width: 400px;}
+    picture.booksofnote>* {height: auto;}
+}
