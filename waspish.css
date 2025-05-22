@@ -153,6 +153,15 @@ p.sbjctmatter.grid {
     gap: 15px;
 }
 
+div.sbjctmatter.grid {
+    display: grid;
+    grid-template-columns: 280px 410px;
+}
+
+div.seg>img {
+    margin-left: 15px;
+}
+
 div#hotspots.grid {
     display: flex;
     flex-wrap: wrap;
@@ -176,23 +185,35 @@ div#hotspots.grid {
     width: 85%;
 }
 
+p.sbctmatter.interactions {
+    background: var(--windowyellow);
+}
+
+blockquote>em {
+    margin-left: 20px;
+}
+
 /* Have this display on a top ROW instead on mobile devices */
 img#searchtools {
     grid-column-start: 1;
     grid-column-end: 2;
     width: 320px;
     min-width: 240px;
+    margin-bottom: 10px;
 }
 
 /* Map styling */
 
 iframe#waspmap {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 85%;
     height: 550px;
     display: block;
     padding-bottom: 15px;
     padding-top: 15px;
+    outline-color: var(--red);
+    outline-style: groove;
+    outline-width: 10px;
 }
 
 p:not(:last-of-type) {
@@ -212,7 +233,20 @@ section {
 
 span.term {
     text-shadow: 0 1px 2px var(--red);
+    background-color: var(--gray);
+    border-radius: 10px;
 }
+
+a {
+    background-color: var(--windowgray);
+    border-radius: 8px;
+}
+
+/* Make section buttons sticky for better navigation */
+/* section>button.acordion {
+    position: sticky;
+    top: 0;
+} */
 
 /* Image/Video styling */
 
@@ -253,6 +287,23 @@ figure#deceptors {
     width: fit-content;
 }
 
+/* div.seg1 {
+    padding-left: 15px;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+div.seg2 {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: "Futura", system-ui;
+    font-size: 1.15rem;
+} */
+
 div.pic1 {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -289,13 +340,28 @@ figure#mapforeafter {
 }
 
 figure.areasofnote {
-    padding: 0 15px;
+    /* padding: 0 15px; */
     width: 470px;
     height: auto;
-    background-color: var(--yellow);
+    background-color: var(--windowyellow);
     background-clip: padding-box;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
     margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+figure.areasofnote>img {
+    width: auto;
+    height: 360px;
+    margin: 0;
+}
+
+figure.areasofnote>h5, figure.areasofnote>img {
+    padding: 0;
 }
 
 img.mapmethods {
@@ -304,24 +370,17 @@ img.mapmethods {
     padding-bottom: 15px;
 }
 
-figure.areasofnote>img {
-    width: auto;
-    height: 360px;
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
-
 figure#mapforeafter>figcaption {
     caption-side: bottom;
     width: 530px;
     height: auto;
     justify-content: center;
     text-align: center;
+    padding-top: 0;
 }
 
 figure#waspsonbuildings {
     display: inline;
-    background-color: var(--yellow);
 }
 
 figure#nestructure, figure#wingingestswing {
@@ -361,13 +420,13 @@ figure#wingingestswing>img {
     width: auto;
 }
 
-#hexandhex>img {
+figure#hexandhex>img {
     height: 250px;
     width: auto;
     margin-left: 15px;
 }
 
-#hexandhex>figcaption {
+figure#hexandhex>figcaption {
     caption-side: bottom;
     max-width: 375px;
     background-color: var(--yellow);
@@ -381,7 +440,10 @@ figure#wingingestswing>img {
 
 img.observe {
     width: 80px;
-    height: auto;  
+    height: auto;
+    outline-color: var(--red);
+    outline-style: groove;
+    outline-width: 2px;
 }
 
 img.pageconcepts {
@@ -430,8 +492,10 @@ figure#draftpages {
     position: relative;
 }
 
+/* Outline that designates interactive info elements */
+
 figure#draftpages, figure#deceptors {
-    outline-color: var(--windowgray);
+    outline-color: var(--red);
     outline-style: groove;
     outline-width: 10px;
     margin-top: 10px;
@@ -528,6 +592,21 @@ table#statesofnest {
 td.nesprite {
     background-color: var(--windowyellow);
 }
+
+body {
+    background-image: url(GitPics/mywaspproject/nestcellsbackground.JPG);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer {
+    background-color: var(--gray);
+    background-clip: padding-box;
+}
+
+footer h3 {
+    padding-left: 10px;
+}
 /* --------
 Queries for responsive design
 -------- */
@@ -545,4 +624,20 @@ Queries for responsive design
     figure#nestructure,figure#wingingestwing>img {height: auto;}
     picture.booksofnote>img.printsource {max-width: 400px;}
     picture.booksofnote>* {height: auto;}
+    /* Testing rearrangement for grids on mobile devices */
+    p.sbjctmatter.grid {display: flex;}
+    p.sbjctmatter.grid {flex-direction: column;}
+    div.sbjctmatter.grid {display: flex;}
+    div.sbjctmatter.grid {flex-direction: column;}
+    /* Testing body width for phones */
+    body {max-width: 600px;}
+}
+
+@media screen and
+(min-width: 1050px) {
+    figure#housecall {display: flex;}
+    figure#housecall {flex-direction: row;}
+    figure#housecall>img {height: 420px;}
+    figure#draftpages {width: 950px;}
+    figure#draftpages>img {width: 180px;}
 }
