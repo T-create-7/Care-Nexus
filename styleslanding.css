@@ -40,6 +40,13 @@ p {
     border-radius: 45px 45px 0 0;
     margin: 15px 10px 0 10px;
 }
+#siteupdates {
+    margin-top: 15px;
+    outline-color: rgb(191 43 17);
+    outline-style: groove;
+    outline-width: 10px;
+    text-align: center;
+}
 #Boutme {
     background-color: rgba(255,255,94,0.8);
     margin: 0 10px 0 10px;
@@ -68,6 +75,11 @@ ul > footer {
     .bar {
         justify-content: space-between;
     }
+
+
+section time {
+    font-weight: bold;
+}
 
 /*My intent was to have the About Me and Work experience sections be flexboxes that display as columns, 
 side-by-side on smaller screens, but I couldn't get that to work. I'll ask for some help and clarity.
