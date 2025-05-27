@@ -616,7 +616,7 @@ Queries for responsive design
     div.sbjctmatter.grid {flex-direction: column;}
     /*How can I best make the table responsive? */
     /* Testing body width for phones */
-    body {max-width: 600px;}
+    body {max-width: 705px;}
 }
 
 @media screen and
