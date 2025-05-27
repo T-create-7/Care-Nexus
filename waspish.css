@@ -606,8 +606,8 @@ Queries for responsive design
     figure#mapforeafter>figcaption {max-width: 320px;}
     figure#deceptors.grid {display: block;}
     /* figure.areasofnote {max-width: 400px;} */
-    figure#nestructure img, figure#wingingestwing img {max-width: 320px;}
-    figure#nestructure,figure#wingingestwing>img {height: auto;}
+    figure#nestructure img, figure#wingingestswing img {max-width: 320px;}
+    figure#nestructure,figure#wingingestswing>img {height: auto;}
     /* figure#draftpages {width: 250px;} */
     picture.booksofnote>img.printsource {max-width: 350px;}
     picture.booksofnote>* {height: auto;}
@@ -617,7 +617,6 @@ Queries for responsive design
     div.sbjctmatter.grid {display: flex;}
     div.sbjctmatter.grid {flex-direction: column;}
     /*How can I best make the table responsive? */
-  
 }
 
 @media screen and
