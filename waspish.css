@@ -598,17 +598,17 @@ Queries for responsive design
 @media screen and 
 (min-width: 400px) and
 (max-width: 720px)  {
-    /* html {max-width: 705px;} */
+    body {max-width: 690px;}
     img, figure>img, img.booksofnote, img.beehaus, img.endshowing {max-width: 350px;}
     figure>img, img.booksofnote {height: auto;}
     /* The deceptors figure may need its own distinct query to keep its width within the screen */
-    figure#mapforeafter, figure.deceptors {max-width: 350px;}
+    figure#mapforeafter, figure.deceptors, figure#draftpages, figure.areasofnote {max-width: 350px;}
     figure#mapforeafter>figcaption {max-width: 320px;}
     figure#deceptors.grid {display: block;}
-    figure.areasofnote {max-width: 400px;}
+    /* figure.areasofnote {max-width: 400px;} */
     figure#nestructure,figure#wingingestwing>img {height: auto;}
     /* figure#draftpages {width: 250px;} */
-    picture.booksofnote>img.printsource {max-width: 400px;}
+    picture.booksofnote>img.printsource {max-width: 350px;}
     picture.booksofnote>* {height: auto;}
     /* Testing rearrangement for grids on mobile devices */
     p.sbjctmatter.grid {display: flex;}
