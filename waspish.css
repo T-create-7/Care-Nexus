@@ -599,13 +599,14 @@ Queries for responsive design
 (min-width: 400px) and
 (max-width: 720px)  {
     body {max-width: 695px;}
-    img, figure>img, img.booksofnote, img.beehaus, img.endshowing, figure#nestructure img, figure#wingingestwing img {max-width: 350px;}
+    img, figure>img, img.booksofnote, img.beehaus, img.endshowing {max-width: 350px;}
     figure>img, img.booksofnote {height: auto;}
     /* The deceptors figure may need its own distinct query to keep its width within the screen */
     figure#mapforeafter, figure.deceptors, figure#draftpages, figure.areasofnote {max-width: 350px;}
     figure#mapforeafter>figcaption {max-width: 320px;}
     figure#deceptors.grid {display: block;}
     /* figure.areasofnote {max-width: 400px;} */
+    figure#nestructure img, figure#wingingestwing img {max-width: 335px;}
     figure#nestructure,figure#wingingestwing>img {height: auto;}
     /* figure#draftpages {width: 250px;} */
     picture.booksofnote>img.printsource {max-width: 350px;}
