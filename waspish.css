@@ -597,7 +597,7 @@ Queries for responsive design
 
 @media screen and 
 (min-width: 400px) and
-(max-width: 600px)  {
+(max-width: 720px)  {
     img, figure>img, img.booksofnote, img.beehaus, img.endshowing {max-width: 350px;}
     figure>img, img.booksofnote {height: auto;}
     /* The deceptors figure may need its own distinct query to keep its width within the screen */
