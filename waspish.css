@@ -598,6 +598,7 @@ Queries for responsive design
 @media screen and 
 (min-width: 400px) and
 (max-width: 720px)  {
+    html {max-width: 705px;}
     img, figure>img, img.booksofnote, img.beehaus, img.endshowing {max-width: 350px;}
     figure>img, img.booksofnote {height: auto;}
     /* The deceptors figure may need its own distinct query to keep its width within the screen */
@@ -616,7 +617,6 @@ Queries for responsive design
     div.sbjctmatter.grid {flex-direction: column;}
     /*How can I best make the table responsive? */
     /* Testing body width for phones */
-    body {max-width: 705px;}
 }
 
 @media screen and
